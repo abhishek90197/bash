@@ -1,3 +1,4 @@
+PyPDF
 PyPDF2
 streamlit
 PdfReader
