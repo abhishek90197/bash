@@ -2,3 +2,5 @@ PyPDF2
 streamlit
 PdfReader
 pandas
+PyPDF2
+
