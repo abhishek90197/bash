@@ -5,9 +5,15 @@ Created on Fri Mar 21 23:29:15 2025
 @author: abhis
 """
 import subprocess
-subprocess.run(["pip", "install", "PyPDF2"])
+import sys
 
-from PyPDF2 import PdfReader
+# Ensure PyPDF2 is installed
+try:
+    from PyPDF2 import PdfReader
+except ModuleNotFoundError:
+    subprocess.run([sys.executable, "-m", "pip", "install", "PyPDF2"])
+    from PyPDF2 import PdfReader  # Retry import after installation
+
 
 import streamlit as st
 from PyPDF2 import PdfReader
