@@ -1,2 +1,2 @@
 # 1app.py
-Ai resume screeing anf canditate ranking system
+Ai resume screeing and canditate ranking system
