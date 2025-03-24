@@ -4,6 +4,10 @@ Created on Fri Mar 21 23:29:15 2025
 
 @author: abhis
 """
+import subprocess
+subprocess.run(["pip", "install", "PyPDF2"])
+
+from PyPDF2 import PdfReader
 
 import streamlit as st
 from PyPDF2 import PdfReader
